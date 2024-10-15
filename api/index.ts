@@ -169,32 +169,17 @@ function handlerStream(model, stream, returnStream, res) {
 }
 
 function messagesPrepare(messages) {
-  let content = "";
+  let content;
   for (const message of messages) {
-    let role = message.role;
+    let role = message.role === "system" ? "user" : message.role;
 
-    if (role === "user" || role === "system" || role === "assistant") {
-      if (role === "system") {
-        role = "user";
-      }
-      let contentStr = "";
-      if (Array.isArray(message.content)) {
-        for (const element of message.content) {
-          if (
-            typeof element === "object" &&
-            element !== null &&
-            "type" in element &&
-            "text" in element
-          ) {
-            if (element.type === "text") {
-              contentStr = element.text;
-              break;
-            }
-          }
-        }
-      } else {
-        contentStr = message.content;
-      }
+    if (["user", "assistant"].includes(role)) {
+      const contentStr = Array.isArray(message.content)
+        ? message.content
+            .filter((item) => item.text)
+            .map((item) => item.text)
+            .join("") || ""
+        : message.content;
       content += `${role}:${contentStr};\r\n`;
     }
   }

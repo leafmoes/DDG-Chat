@@ -27,7 +27,7 @@
 
 ## 网页端
 
-请使用第三方 ChatGPT 应用调用接口，例如 [ChatNextWeb](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)。
+请使用第三方 ChatGPT 应用调用接口，例如 [ChatNextWeb](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)
 
 ## 调用接口
 
@@ -69,15 +69,16 @@ curl --request POST 'https://chatapi.r12.top/v1/chat/completions' \
 
 ### Docker
 
-请准备一台具有公网IP的服务器并将8000端口开放。
-
-拉取镜像并启动服务
-
+方法一：命令行构建
 ```bash
-docker run -it -d --init --name ddg-chat -p 8000:8000 -e TZ=Asia/Shanghai leafmoes/ddg-chat:latest
+docker run -it -d --name ddg-chat -p 3000:3000 ghcr.io/leafmoes/ddg-chat:latest
 ```
 
-docker 相关命令
+方法二：使用 `docker-compose.yml` 文件构建
+
+下载保存 [docker-compose.yml](https://github.com/leafmoes/DDG-Chat/blob/master/docker-compose.yml) 文件，然后在该文件所在目录运行 `docker-compose up -d` 来启动服务。
+
+Docker 相关命令
 
 ```bash
 docker logs -f ddg-chat # 查看服务实时日志
@@ -114,6 +115,16 @@ vercel --prod
 2. 点击下面按钮到 Render 官网，`Import` 你刚才 fork 的仓库，然后按正常部署流程走
 
 [<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy on Render" height="30">](https://render.com/deploy)
+
+## 常见问题
+
+1. Vercel 部署有何限制？
+   - 免费版单次 API 请求时长为 60s
+   - 免费版每月 API 调用次数为 100,000 次
+   - [官方文档 - Vercel 函数限制]((https://vercel.com/docs/functions/limitations#vercel-functions-limitations))
+2. 是否计划增加前端应用？
+   - 不考虑，请使用其他的优秀项目，例如：[ChatNextWeb](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)
+
 
 ## 交流群组
 
