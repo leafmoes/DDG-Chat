@@ -31,10 +31,12 @@
 
 ## 调用接口
 
-示例（其中 `example.com` 请替换为你自己部署后的域名）：
+### 对话请求
+
+示例（其中 `chatapi.r12.top` 请替换为你自己部署后的域名）：
 
 ```bash
-curl --request POST 'https://example.com/v1/chat/completions' \
+curl --request POST 'https://chatapi.r12.top/v1/chat/completions' \
   --header 'Content-Type: application/json' \
   --data '{
     "messages": [
@@ -47,6 +49,12 @@ curl --request POST 'https://example.com/v1/chat/completions' \
     "stream": true
   }'
 ```
+
+### 模型查询
+
+示例（其中 `chatapi.r12.top` 请替换为你自己部署后的域名）：
+
+访问 `http://chatapi.r12.top/v1/models` 可查看当前支持的模型
 
 ## 支持的模型
 
