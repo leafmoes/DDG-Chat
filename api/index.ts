@@ -49,6 +49,34 @@ app.get("/ping", (_, res) => {
   });
 });
 
+app.get("/v1/models", async (_, res) => {
+  res.json({
+    object: "list",
+    data: [
+      {
+        id: "gpt-4o-mini",
+        object: "model",
+        owned_by: "ddg",
+      },
+      {
+        id: "claude-3-haiku",
+        object: "model",
+        owned_by: "ddg",
+      },
+      {
+        id: "llama-3.1-70b",
+        object: "model",
+        owned_by: "ddg",
+      },
+      {
+        id: "mixtral-8x7b",
+        object: "model",
+        owned_by: "ddg",
+      },
+    ],
+  });
+});
+
 app.post("/v1/chat/completions", async (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "*");
