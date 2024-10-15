@@ -23,7 +23,7 @@
 
 请勿滥用
 
-- [https://chat.r12.top](https://chat.r12.top)
+- [https://chatapi.r12.top](https://chatapi.r12.top)
 
 ## 网页端
 
