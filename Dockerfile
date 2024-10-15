@@ -1,16 +1,16 @@
-FROM node:lts AS BUILD_IMAGE
+FROM node:lts AS builder
 
 WORKDIR /app
 
 COPY . /app
 
-RUN yarn install --registry https://registry.npmmirror.com/ && yarn run build
+RUN yarn install --registry https://registry.npmmirror.com/
 
 FROM zenika/alpine-chrome:124-with-node
 
-COPY --from=BUILD_IMAGE /app/package.json /app/package.json
-COPY --from=BUILD_IMAGE /app/api /app/api
-COPY --from=BUILD_IMAGE /app/node_modules /app/node_modules
+COPY --from=builder /app/package.json /app/package.json
+COPY --from=builder /app/api /app/api
+COPY --from=builder /app/node_modules /app/node_modules
 
 WORKDIR /app
 
