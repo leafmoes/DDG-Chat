@@ -11,7 +11,7 @@ const FAKE_HEADERS = {
   Accept: "*/*",
   "Accept-Encoding": "gzip, deflate, br, zstd",
   "Accept-Language": "zh-CN,zh;q=0.9",
-  Origin: "https://metaso.cn",
+  Origin: "https://duckduckgo.com/",
   Cookie: "l=wt-wt; ah=wt-wt; dcm=6",
   Dnt: "1",
   Priority: "u=1, i",
