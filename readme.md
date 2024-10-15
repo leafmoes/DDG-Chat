@@ -1,7 +1,7 @@
 <div align="center">
 <img src="https://socialify.git.ci/leafmoes/DDG-Chat/image?font=Inter&forks=1&issues=1&logo=https://duckduckgo.com/assets/logo_header.v109.svg&name=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto" alt="DDG-Chat"/>
 
-一键免费部署到 Vercel 你的跨平台私人 ChatGPT 应用
+一键免费部署到 Vercel 你的 ChatGPT API 后端
 
 支持 GPT4o mini, Claude 3 Haiku, Llama 3.1 70B, Mixtral 8x7B 模型
 
@@ -13,7 +13,7 @@
 
 <div align="center">
 
-[<img src="https://vercel.com/button" alt="Deploy on Vercel" height="30">](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fleafmoes%2Fddg-chat&project-name=ddg-chat&repository-name=ddg-chat)
+[<img src="https://vercel.com/button" alt="Deploy on Vercel" height="30">](https://vercel.com/new/clone?repository-url=https://github.com/leafmoes/ddg-chat&project-name=ddg-chat&repository-name=ddg-chat) 
 
 [手动部署](https://github.com/leafmoes/DDG-Chat#手动部署)
 
@@ -111,33 +111,13 @@ vercel --prod
 
 [Telegram](https://t.me/None)
 
-## 贡献
+## Contributors
 
-欢迎大佬贡献！
+<a href="https://github.com/leafmoes/ddg-chat/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=leafmoes/ddg-chat" />
+</a>
 
-# LICENSE
+## LICENSE
 
-```
-MIT License
-
-Copyright (c) 2021 Spencer Woo
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+[MIT License](https://github.com/leafmoes/DDG-Chat/blob/master/LICENSE)
 
