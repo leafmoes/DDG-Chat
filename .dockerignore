@@ -1,0 +1,10 @@
+logs
+dist
+doc
+tmp
+node_modules
+.vscode
+.git
+.gitignore
+README.md
+*.tar.gz
