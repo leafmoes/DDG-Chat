@@ -186,9 +186,6 @@ async function requestToken() {
 function convertModel(inputModel) {
   let model;
   switch (inputModel.toLowerCase()) {
-    case "gpt-3.5":
-      model = "gpt-4o-mini";
-      break;
     case "claude-3-haiku":
       model = "claude-3-haiku-20240307";
       break;
