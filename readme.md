@@ -121,7 +121,7 @@ vercel --prod
 1. Vercel 部署有何限制？
    - 免费版单次 API 请求时长为 60s
    - 免费版每月 API 调用次数为 100,000 次
-   - 官方文档 - [Vercel 函数限制]((https://vercel.com/docs/functions/limitations#vercel-functions-limitations))
+   - 官方文档 - [Vercel 函数限制](https://vercel.com/docs/functions/limitations#vercel-functions-limitations)
 2. 是否计划增加前端应用？
    - 不考虑，请使用其他的优秀项目，例如：[ChatNextWeb](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)
 
