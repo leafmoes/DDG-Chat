@@ -6,6 +6,8 @@ const fs = require("fs");
 const bodyParser = require("body-parser");
 
 const app = express();
+const MAX_RETRY_COUNT = 3;
+const RETRY_DELAY = 5000;
 
 const FAKE_HEADERS = {
   Accept: "*/*",
@@ -78,16 +80,24 @@ app.get("/v1/models", async (_, res) => {
 });
 
 app.post("/v1/chat/completions", async (req, res) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Methods", "*");
-  res.header("Access-Control-Allow-Headers", "*");
-
-  const { model: inputModel, messages, stream: returnStream } = req.body;
-  const model = convertModel(inputModel);
   try {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "*");
+    res.header("Access-Control-Allow-Headers", "*");
+    const { model: inputModel, messages, stream: returnStream } = req.body;
+    const model = convertModel(inputModel);
     const content = messagesPrepare(messages);
-    const token = await requestToken();
+    await createCompletion(model,content,returnStream,res)
+  } catch (err) {
+    res.status(500).json({
+      error: err.message,
+    });
+  }
+});
 
+async function createCompletion(model, content, returnStream, res, retryCount = 0){
+  return (async () => {
+    const token = await requestToken();
     const result = await axios.post(
       `https://duckduckgo.com/duckchat/v1/chat`,
       {
@@ -111,14 +121,19 @@ app.post("/v1/chat/completions", async (req, res) => {
         responseType: "stream",
       }
     );
-
     handlerStream(model, result.data, returnStream, res);
-  } catch (err) {
-    res.status(500).json({
-      error: err.message,
-    });
-  }
-});
+  })().catch((err) =>{
+    if (retryCount < MAX_RETRY_COUNT) {
+      return (async () => {
+        console.log(err)
+        console.log("Retrying... count",++retryCount)
+        await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY));
+        return createCompletion(model, content,returnStream, retryCount,res);
+      })();
+    }
+    throw err;
+  })
+}
 
 function handlerStream(model, stream, returnStream, res) {
   if (returnStream) {
@@ -130,45 +145,41 @@ function handlerStream(model, stream, returnStream, res) {
   let previousText = "";
   stream.on("data", (chunk) => {
     const chunkStr = chunk.toString();
-    try {
-      chunkStr.split("\n").forEach((line) => {
-        if (line.length < 6) {
+    chunkStr.split("\n").forEach((line) => {
+      if (line.length < 6) {
+        return;
+      }
+      line = line.slice(6);
+      if (line !== "[DONE]") {
+        const originReq = JSON.parse(line);
+        if (originReq.action !== "success") {
+          res.status(500).send("Error");
           return;
         }
-        line = line.slice(6);
-        if (line !== "[DONE]") {
-          const originReq = JSON.parse(line);
-          if (originReq.action !== "success") {
-            res.status(500).send("Error");
-            return;
-          }
-          if (originReq.message) {
-            previousText += originReq.message;
-            const translatedResponse = newChatCompletionChunkWithModel(
-              originReq.message,
-              originReq.model
-            );
-            if (returnStream) {
-              const responseString = `data: ${JSON.stringify(
-                translatedResponse
-              )}\n\n`;
-              res.write(responseString);
-            }
-          }
-        } else {
+        if (originReq.message) {
+          previousText += originReq.message;
+          const translatedResponse = newChatCompletionChunkWithModel(
+            originReq.message,
+            originReq.model
+          );
           if (returnStream) {
-            res.write(
-              `data: ${JSON.stringify(stopChunkWithModel("stop", model))}\n\n`
-            );
-            res.end();
-          } else {
-            res.json(newChatCompletionWithModel(previousText, model));
+            const responseString = `data: ${JSON.stringify(
+              translatedResponse
+            )}\n\n`;
+            res.write(responseString);
           }
         }
-      });
-    } catch (error) {
-      console.error(error, chunkStr);
-    }
+      } else {
+        if (returnStream) {
+          res.write(
+            `data: ${JSON.stringify(stopChunkWithModel("stop", model))}\n\n`
+          );
+          res.end();
+        } else {
+          res.json(newChatCompletionWithModel(previousText, model));
+        }
+      }
+    });
   });
 }
 
