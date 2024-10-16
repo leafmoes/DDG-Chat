@@ -130,41 +130,45 @@ function handlerStream(model, stream, returnStream, res) {
   let previousText = "";
   stream.on("data", (chunk) => {
     const chunkStr = chunk.toString();
-    chunkStr.split("\n").forEach((line) => {
-      if (line.length < 6) {
-        return;
-      }
-      line = line.slice(6);
-      if (line !== "[DONE]") {
-        const originReq = JSON.parse(line);
-        if (originReq.action !== "success") {
-          res.status(500).send("Error");
+    try {
+      chunkStr.split("\n").forEach((line) => {
+        if (line.length < 6) {
           return;
         }
-        if (originReq.message) {
-          previousText += originReq.message;
-          const translatedResponse = newChatCompletionChunkWithModel(
-            originReq.message,
-            originReq.model
-          );
+        line = line.slice(6);
+        if (line !== "[DONE]") {
+          const originReq = JSON.parse(line);
+          if (originReq.action !== "success") {
+            res.status(500).send("Error");
+            return;
+          }
+          if (originReq.message) {
+            previousText += originReq.message;
+            const translatedResponse = newChatCompletionChunkWithModel(
+              originReq.message,
+              originReq.model
+            );
+            if (returnStream) {
+              const responseString = `data: ${JSON.stringify(
+                translatedResponse
+              )}\n\n`;
+              res.write(responseString);
+            }
+          }
+        } else {
           if (returnStream) {
-            const responseString = `data: ${JSON.stringify(
-              translatedResponse
-            )}\n\n`;
-            res.write(responseString);
+            res.write(
+              `data: ${JSON.stringify(stopChunkWithModel("stop", model))}\n\n`
+            );
+            res.end();
+          } else {
+            res.json(newChatCompletionWithModel(previousText, model));
           }
         }
-      } else {
-        if (returnStream) {
-          res.write(
-            `data: ${JSON.stringify(stopChunkWithModel("stop", model))}\n\n`
-          );
-          res.end();
-        } else {
-          res.json(newChatCompletionWithModel(previousText, model));
-        }
-      }
-    });
+      });
+    } catch (error) {
+      console.error(error, chunkStr);
+    }
   });
 }
 
