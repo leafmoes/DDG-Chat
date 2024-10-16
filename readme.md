@@ -105,8 +105,23 @@ vercel --prod
 
 ### Cloudflare Workers
 
+方法一：
+
 1. 进入 Cloudflare Workers 和 Pages 控制台，创建一个 Workers
-2. 粘贴[此文件](https://github.com/leafmoes/DDG-Chat/blob/cf-workers/dist/index.js)内部代码到你的 Workers，然后点击部署
+2. 粘贴 [此文件](https://github.com/leafmoes/DDG-Chat/blob/cf-workers/dist/index.js) 内部代码到你的 Workers，然后点击部署
+
+方法二：
+
+1. 首先确保你有 Nodejs 环境
+2. 执行下面命令：
+
+```
+git clone -b cf-workers https://github.com/leafmoes/DDG-Chat.git ddg-chat
+cd ddg-chat
+npm install
+wrangler login
+wrangler publish
+```
 
 ### Docker
 
