@@ -25,9 +25,11 @@
 
 - [https://chatapi.r12.top](https://chatapi.r12.top)
 
-## 网页端
+## 建议使用方式
 
-请使用第三方 ChatGPT 应用调用接口，例如 [ChatNextWeb](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)
+使用第三方 ChatGPT 应用来调用接口，例如：
+- [ChatNextWeb](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)
+- [沉浸式翻译](https://immersivetranslate.com)
 
 ## 调用接口
 
@@ -67,27 +69,10 @@ curl --request POST 'https://chatapi.r12.top/v1/chat/completions' \
 
 ## 手动部署
 
-### Docker
-
-方法一：命令行构建
-```bash
-docker run -it -d --name ddg-chat -p 3000:3000 ghcr.io/leafmoes/ddg-chat:latest
-```
-
-方法二：使用 `docker-compose.yml` 文件构建
-
-下载保存 [docker-compose.yml](https://github.com/leafmoes/DDG-Chat/blob/master/docker-compose.yml) 文件，然后在该文件所在目录运行 `docker-compose up -d` 来启动服务。
-
-Docker 相关命令
-
-```bash
-docker logs -f ddg-chat # 查看服务实时日志
-docker restart ddg-chat # 重启服务
-docker stop ddg-chat # 停止服务
-```
-
+由于 DDG API 限制单 IP 并发数，推荐使用 Vercel 进行部署，如果使用 Docker 之类的本地部署，请确保项目运行在代理池中。
 
 ### Vercel
+
 方法一：本地 Clone 仓库部署
 1. 首先确保你有 Nodejs 环境
 2. 执行下面命令：
@@ -116,6 +101,25 @@ vercel --prod
 
 [<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy on Render" height="30">](https://render.com/deploy)
 
+### Docker
+
+方法一：命令行构建
+```bash
+docker run -it -d --name ddg-chat -p 3000:3000 ghcr.io/leafmoes/ddg-chat:latest
+```
+
+方法二：使用 `docker-compose.yml` 文件构建
+
+下载保存 [docker-compose.yml](https://github.com/leafmoes/DDG-Chat/blob/master/docker-compose.yml) 文件，然后在该文件所在目录运行 `docker-compose up -d` 来启动服务。
+
+Docker 相关命令
+
+```bash
+docker logs -f ddg-chat # 查看服务实时日志
+docker restart ddg-chat # 重启服务
+docker stop ddg-chat # 停止服务
+```
+
 ## 常见问题
 
 1. Vercel 部署有何限制？
@@ -124,7 +128,8 @@ vercel --prod
    - 官方文档 - [Vercel 函数限制](https://vercel.com/docs/functions/limitations#vercel-functions-limitations)
 2. 是否计划增加前端应用？
    - 不考虑，请使用其他的优秀项目，例如：[ChatNextWeb](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)
-
+3. 为什么报错 `429 ERR_SERVICE_UNAVAILABLE`，如何解决？
+   - 非 Vercel 容易出现此问题，由于 DDG API 限制单 IP 并发，建议减少并发量，同时使用代理池进行请求。
 
 ## 交流群组
 
