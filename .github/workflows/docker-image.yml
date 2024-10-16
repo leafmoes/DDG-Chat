@@ -3,9 +3,9 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main
+      - master
     paths-ignore:
-      - 'README.md'
+      - 'readme.md'
   workflow_dispatch:
 
 env:
