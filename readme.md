@@ -1,7 +1,9 @@
 <div align="center">
 <img src="https://socialify.git.ci/leafmoes/DDG-Chat/image?font=Inter&forks=1&issues=1&logo=https://duckduckgo.com/assets/logo_header.v109.svg&name=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto" alt="DDG-Chat"/>
 
-一键免费部署到 Vercel 你的 ChatGPT API 后端
+一键免费部署到各种平台你的 ChatGPT API 后端
+
+支持 Vercel, Cloudflare Workers, Docker, Render 等
 
 支持 GPT4o mini, Claude 3 Haiku, Llama 3.1 70B, Mixtral 8x7B 模型
 
@@ -100,6 +102,11 @@ vercel --prod
 2. 点击下面按钮到 Render 官网，`Import` 你刚才 fork 的仓库，然后按正常部署流程走
 
 [<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy on Render" height="30">](https://render.com/deploy)
+
+### Cloudflare Workers
+
+1. 进入 Cloudflare Workers 和 Pages 控制台，创建一个 Workers
+2. 粘贴[此文件](https://github.com/leafmoes/DDG-Chat/blob/master/cf/index.js)内部代码到你的 Workers，然后点击部署
 
 ### Docker
 
