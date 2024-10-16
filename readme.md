@@ -106,7 +106,7 @@ vercel --prod
 ### Cloudflare Workers
 
 1. 进入 Cloudflare Workers 和 Pages 控制台，创建一个 Workers
-2. 粘贴[此文件](https://github.com/leafmoes/DDG-Chat/blob/master/cf/index.js)内部代码到你的 Workers，然后点击部署
+2. 粘贴[此文件](https://github.com/leafmoes/DDG-Chat/blob/cf-workers/dist/index.js)内部代码到你的 Workers，然后点击部署
 
 ### Docker
 
