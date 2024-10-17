@@ -6,6 +6,7 @@ on:
       - master
     paths-ignore:
       - 'readme.md'
+      - 'dist/index.js'
   workflow_dispatch:
 
 env:

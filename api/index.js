@@ -106,8 +106,8 @@ async function createCompletion(model, content, returnStream, retryCount = 0) {
 		}
 		return handlerStream(model, response.body, returnStream);
 	} catch (err) {
+		console.log(err);
 		if (retryCount < config.MAX_RETRY_COUNT) {
-			console.log(err);
 			console.log('Retrying... count', ++retryCount);
 			await new Promise((resolve) => setTimeout(resolve, config.RETRY_DELAY));
 			return await createCompletion(model, content, returnStream, retryCount);

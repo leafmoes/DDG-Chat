@@ -123,7 +123,7 @@ cd ddg-chat
 npm install
 ```
 
-3. 打开文件 /api/index.js ，移除最后一行的注释，然后执行 `npm run publish:cf`
+3. 打开文件 /api/index.js ，取消最后一行的注释，然后执行 `npm run publish:cf`
 
 ### Docker
 
