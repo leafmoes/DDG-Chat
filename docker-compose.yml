@@ -6,4 +6,4 @@ services:
     container_name: ddg-chat
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "8787:8787"
