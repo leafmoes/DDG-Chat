@@ -75,23 +75,23 @@ curl --request POST 'https://chatapi.r12.top/v1/chat/completions' \
 
 ### Vercel
 
-方法一：本地 Clone 仓库部署
+方法一：云端 Fork 仓库部署
+
+1. [fork](https://github.com/leafmoes/ddg-chat/fork) 这个仓库到你的 Github
+2. 进入 [Vercel New Project](https://vercel.com/new/) 网页，`Import` 你刚才 fork 的仓库
+3. 点击 `Deploy` 即可
+
+方法二：本地 Clone 仓库部署
 1. 首先确保你有 Nodejs 环境
 2. 执行下面命令：
 
 ```bash
 npm i -g vercel
 vercel login
-git clone https://github.com/leafmoes/ddg-chat
+git clone https://github.com/leafmoes/DDG-Chat.git ddg-chat
 cd ddg-chat
-vercel --prod
+npm run publish
 ```
-
-方法二：云端 Fork 仓库部署
-
-1. [fork](https://github.com/leafmoes/ddg-chat/fork) 这个仓库到你的 Github
-2. 进入 [Vercel New Project](https://vercel.com/new/) 网页，`Import` 你刚才 fork 的仓库
-3. 点击 `Deploy` 即可
 
 方法三：一键部署
 
@@ -108,26 +108,28 @@ vercel --prod
 方法一：
 
 1. 进入 Cloudflare Workers 和 Pages 控制台，创建一个 Workers
-2. 粘贴 [此文件](https://github.com/leafmoes/DDG-Chat/blob/cf-workers/dist/index.js) 内部代码到你的 Workers，然后点击部署
+2. 粘贴 [此文件](https://github.com/leafmoes/DDG-Chat/blob/master/dist/index.js) 内部代码到你的 Workers，然后点击部署
 
 方法二：
 
 1. 首先确保你有 Nodejs 环境
-2. 执行下面命令：
+2. 首先执行下面命令：
 
-```
-git clone -b cf-workers https://github.com/leafmoes/DDG-Chat.git ddg-chat
+```bash
+npm i -g wrangler
+wrangler login
+git clone https://github.com/leafmoes/DDG-Chat.git ddg-chat
 cd ddg-chat
 npm install
-wrangler login
-wrangler publish
 ```
+
+3. 打开文件 /api/index.js ，移除最后一行的注释，然后执行 `npm run publish:cf`
 
 ### Docker
 
 方法一：命令行构建
 ```bash
-docker run -it -d --name ddg-chat -p 3000:3000 ghcr.io/leafmoes/ddg-chat:latest
+docker run -it -d --name ddg-chat -p 8787:8787 ghcr.io/leafmoes/ddg-chat:latest
 ```
 
 方法二：使用 `docker-compose.yml` 文件构建

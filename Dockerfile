@@ -16,6 +16,6 @@ WORKDIR /app
 
 USER root
 
-EXPOSE 8000
+EXPOSE 8787
 
 CMD ["npm", "start"]
