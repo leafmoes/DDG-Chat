@@ -25,7 +25,7 @@
 
 请勿滥用
 
-- [https://chatapi.r12.top](https://chatapi.r12.top)
+- [https://chatcfapi.r12.top](https://chatcfapi.r12.top)
 
 ## 建议使用方式
 
@@ -40,7 +40,7 @@
 示例（其中 `chatapi.r12.top` 请替换为你自己部署后的域名）：
 
 ```bash
-curl --request POST 'https://chatapi.r12.top/v1/chat/completions' \
+curl --request POST 'https://chatcfapi.r12.top/v1/chat/completions' \
   --header 'Content-Type: application/json' \
   --data '{
     "messages": [
