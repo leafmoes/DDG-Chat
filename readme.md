@@ -144,6 +144,17 @@ docker restart ddg-chat # 重启服务
 docker stop ddg-chat # 停止服务
 ```
 
+## 环境变量
+
+```bash
+# API 调用的前缀地址
+API_PREFIX = '/'
+# 向 DDG 发送请求失败的重试次数
+MAX_RETRY_COUNT = 3
+# 向 DDG 发送请求失败的重试延迟，单位 ms
+RETRY_DELAY = 5000
+```
+
 ## 常见问题
 
 1. Vercel 部署有何限制？

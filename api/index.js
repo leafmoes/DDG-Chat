@@ -1,29 +1,33 @@
-import { createServerAdapter } from '@whatwg-node/server'
+import { createServerAdapter } from '@whatwg-node/server';
 import { AutoRouter, json, error, cors } from 'itty-router';
-import { createServer } from 'http'
+import { createServer } from 'http';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 class Config {
-    constructor() {
-        this.MAX_RETRY_COUNT = process.env.MAX_RETRY_COUNT || 3;
-        this.RETRY_DELAY = process.env.RETRY_DELAY || 5000;
-        this.FAKE_HEADERS = process.env.FAKE_HEADERS || {
-            Accept: '*/*',
-            'Accept-Encoding': 'gzip, deflate, br, zstd',
-            'Accept-Language': 'zh-CN,zh;q=0.9',
-            Origin: 'https://duckduckgo.com/',
-            Cookie: 'l=wt-wt; ah=wt-wt; dcm=6',
-            Dnt: '1',
-            Priority: 'u=1, i',
-            Referer: 'https://duckduckgo.com/',
-            'Sec-Ch-Ua': '"Microsoft Edge";v="129", "Not(A:Brand";v="8", "Chromium";v="129"',
-            'Sec-Ch-Ua-Mobile': '?0',
-            'Sec-Ch-Ua-Platform': '"Windows"',
-            'Sec-Fetch-Dest': 'empty',
-            'Sec-Fetch-Mode': 'cors',
-            'Sec-Fetch-Site': 'same-origin',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
-        };
-    }
+	constructor() {
+		this.API_PREFIX = process.env.API_PREFIX || '/';
+		this.MAX_RETRY_COUNT = process.env.MAX_RETRY_COUNT || 3;
+		this.RETRY_DELAY = process.env.RETRY_DELAY || 5000;
+		this.FAKE_HEADERS = process.env.FAKE_HEADERS || {
+			Accept: '*/*',
+			'Accept-Encoding': 'gzip, deflate, br, zstd',
+			'Accept-Language': 'zh-CN,zh;q=0.9',
+			Origin: 'https://duckduckgo.com/',
+			Cookie: 'l=wt-wt; ah=wt-wt; dcm=6',
+			Dnt: '1',
+			Priority: 'u=1, i',
+			Referer: 'https://duckduckgo.com/',
+			'Sec-Ch-Ua': '"Microsoft Edge";v="129", "Not(A:Brand";v="8", "Chromium";v="129"',
+			'Sec-Ch-Ua-Mobile': '?0',
+			'Sec-Ch-Ua-Platform': '"Windows"',
+			'Sec-Fetch-Dest': 'empty',
+			'Sec-Fetch-Mode': 'cors',
+			'Sec-Fetch-Site': 'same-origin',
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
+		};
+	}
 }
 
 const config = new Config();
@@ -50,7 +54,7 @@ const router = AutoRouter({
 
 router.get('/', () => json({ message: 'API 服务运行中~' }));
 router.get('/ping', () => json({ message: 'pong' }));
-router.get('/v1/models', () =>
+router.get(config.API_PREFIX + '/v1/models', () =>
 	json({
 		object: 'list',
 		data: [
@@ -62,7 +66,7 @@ router.get('/v1/models', () =>
 	})
 );
 
-router.post('/v1/chat/completions', (req) => handleCompletion(req));
+router.post(config.API_PREFIX + '/v1/chat/completions', (req) => handleCompletion(req));
 
 async function handleCompletion(request) {
 	try {
@@ -130,7 +134,7 @@ async function handlerStream(model, rb, returnStream) {
 			bwzChunk = chunk;
 		}
 		return chunk;
-	};	
+	};
 	const reader = rb.getReader();
 	const decoder = new TextDecoder();
 	const encoder = new TextEncoder();
@@ -294,17 +298,16 @@ function newChatCompletionWithModel(text, model) {
 	};
 }
 
-
 // Serverless Service
 
 (async () => {
 	//For Cloudflare Workers
 	if (typeof addEventListener === 'function') return;
 	// For Nodejs
-	const ittyServer = createServerAdapter(router.fetch)
-	console.log(`Listening on http://localhost:${process.env.PORT || 8787}`)
-	const httpServer = createServer(ittyServer)
-	httpServer.listen(8787)
+	const ittyServer = createServerAdapter(router.fetch);
+	console.log(`Listening on http://localhost:${process.env.PORT || 8787}`);
+	const httpServer = createServer(ittyServer);
+	httpServer.listen(8787);
 })();
 
 // export default router
