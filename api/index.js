@@ -8,6 +8,7 @@ dotenv.config();
 class Config {
 	constructor() {
 		this.API_PREFIX = process.env.API_PREFIX || '/';
+		this.API_KEY = process.env.API_KEY || '';
 		this.MAX_RETRY_COUNT = process.env.MAX_RETRY_COUNT || 3;
 		this.RETRY_DELAY = process.env.RETRY_DELAY || 5000;
 		this.FAKE_HEADERS = process.env.FAKE_HEADERS || {
@@ -42,12 +43,25 @@ const withBenchmarking = (request) => {
 	request.start = Date.now();
 };
 
+const withAuth = (request) => {
+	if (config.API_KEY) {
+		const authHeader = request.headers.get('Authorization');
+		if (!authHeader || !authHeader.startsWith('Bearer ')) {
+			return error(401, 'Unauthorized: Missing or invalid Authorization header');
+		}
+		const token = authHeader.substring(7);
+		if (token !== config.API_KEY) {
+			return error(403, 'Forbidden: Invalid API key');
+		}
+	}
+};
+
 const logger = (res, req) => {
 	console.log(req.method, res.status, req.url, Date.now() - req.start, 'ms');
 };
 
 const router = AutoRouter({
-	before: [withBenchmarking, preflight],
+	before: [withBenchmarking, preflight, withAuth],
 	missing: () => error(404, '404 not found.'),
 	finally: [corsify, logger],
 });

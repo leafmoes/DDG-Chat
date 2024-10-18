@@ -149,6 +149,8 @@ docker stop ddg-chat # 停止服务
 ```bash
 # API 调用的前缀地址
 API_PREFIX = '/'
+# 作为调用 API 验证的 API Key
+API_KEY = 'dummy_key'
 # 向 DDG 发送请求失败的重试次数
 MAX_RETRY_COUNT = 3
 # 向 DDG 发送请求失败的重试延迟，单位 ms
