@@ -6043,6 +6043,7 @@ import_dotenv.default.config();
 var Config = class {
   constructor() {
     this.API_PREFIX = process.env.API_PREFIX || "/";
+    this.API_KEY = process.env.API_KEY || "";
     this.MAX_RETRY_COUNT = process.env.MAX_RETRY_COUNT || 3;
     this.RETRY_DELAY = process.env.RETRY_DELAY || 5e3;
     this.FAKE_HEADERS = process.env.FAKE_HEADERS || {
@@ -6074,11 +6075,23 @@ var { preflight, corsify } = y({
 var withBenchmarking = /* @__PURE__ */ __name((request2) => {
   request2.start = Date.now();
 }, "withBenchmarking");
+var withAuth = /* @__PURE__ */ __name((request2) => {
+  if (config2.API_KEY) {
+    const authHeader = request2.headers.get("Authorization");
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+      return s(401, "Unauthorized: Missing or invalid Authorization header");
+    }
+    const token = authHeader.substring(7);
+    if (token !== config2.API_KEY) {
+      return s(403, "Forbidden: Invalid API key");
+    }
+  }
+}, "withAuth");
 var logger = /* @__PURE__ */ __name((res, req) => {
   console.log(req.method, res.status, req.url, Date.now() - req.start, "ms");
 }, "logger");
 var router = n({
-  before: [withBenchmarking, preflight],
+  before: [withBenchmarking, preflight, withAuth],
   missing: () => s(404, "404 not found."),
   finally: [corsify, logger]
 });

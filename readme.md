@@ -108,6 +108,7 @@ npm run publish
 方法一：
 
 1. 进入 Cloudflare Workers 和 Pages 控制台，创建一个 Workers
+2. 进入 Workers 设置，在 `运行时` 设置 `兼容性标志` 为 `nodejs_compat`
 2. 粘贴 [此文件](https://github.com/leafmoes/DDG-Chat/blob/master/dist/index.js) 内部代码到你的 Workers，然后点击部署
 
 方法二：
