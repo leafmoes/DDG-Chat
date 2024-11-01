@@ -1,20 +1,12 @@
-FROM node:lts AS builder
+FROM node:lts-alpine
 
 WORKDIR /app
 
-COPY . /app
+COPY package*.json ./
 
-RUN yarn install --registry https://registry.npmmirror.com/
+RUN npm install
 
-FROM zenika/alpine-chrome:124-with-node
-
-COPY --from=builder /app/package.json /app/package.json
-COPY --from=builder /app/api /app/api
-COPY --from=builder /app/node_modules /app/node_modules
-
-WORKDIR /app
-
-USER root
+COPY . .
 
 EXPOSE 8787
 
