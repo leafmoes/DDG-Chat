@@ -37,7 +37,7 @@
 
 ### 对话请求
 
-示例（其中 `chatapi.r12.top` 请替换为你自己部署后的域名）：
+示例（其中 `chatcfapi.r12.top` 请替换为你自己部署后的域名）：
 
 ```bash
 curl --request POST 'https://chatcfapi.r12.top/v1/chat/completions' \
@@ -56,9 +56,9 @@ curl --request POST 'https://chatcfapi.r12.top/v1/chat/completions' \
 
 ### 模型查询
 
-示例（其中 `chatapi.r12.top` 请替换为你自己部署后的域名）：
+示例（其中 `chatcfapi.r12.top` 请替换为你自己部署后的域名）：
 
-访问 `http://chatapi.r12.top/v1/models` 可查看当前支持的模型
+访问 `http://chatcfapi.r12.top/v1/models` 可查看当前支持的模型
 
 ## 支持的模型
 
