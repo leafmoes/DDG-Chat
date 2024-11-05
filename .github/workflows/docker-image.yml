@@ -11,6 +11,7 @@ on:
 
 env:
   GHCR_REPO: ghcr.io/leafmoes/ddg-chat
+  DOCKER_HUB_REPO: leafmoes/ddg-chat
 
 jobs:
   docker:
@@ -31,8 +32,18 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GHCR_PAT }}
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+
+      - name: Get short SHA
+        id: slug
+        run: echo "::set-output name=sha7::$(echo ${GITHUB_SHA} | cut -c1-7)"
           
-      - name: Build and push
+      - name: Build and push to GitHub Container Registry
         uses: docker/build-push-action@v6
         with:
           context: .
@@ -41,6 +52,19 @@ jobs:
           push: true
           tags: |
             ${{ env.GHCR_REPO }}:latest
-            ${{ env.GHCR_REPO }}:${{ github.sha }}
+            ${{ env.GHCR_REPO }}:${{ steps.slug.outputs.sha7 }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Build and push to Docker Hub
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64
+          file: Dockerfile
+          push: true
+          tags: |
+            ${{ env.DOCKER_HUB_REPO }}:lates1314521t
+            ${{ env.DOCKER_HUB_REPO }}:${{ steps.slug.outputs.sha7 }}
           cache-from: type=gha
           cache-to: type=gha,mode=max

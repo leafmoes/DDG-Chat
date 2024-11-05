@@ -130,7 +130,7 @@ npm install
 
 方法一：命令行构建
 ```bash
-docker run -it -d --name ddg-chat -p 8787:8787 ghcr.io/leafmoes/ddg-chat:latest
+docker run -it -d --name ddg-chat -p 8787:8787 leafmoes/ddg-chat:latest
 ```
 
 方法二：使用 `docker-compose.yml` 文件构建
