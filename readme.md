@@ -17,7 +17,13 @@
 
 [<img src="https://vercel.com/button" alt="Deploy on Vercel" height="30">](https://vercel.com/new/clone?repository-url=https://github.com/leafmoes/ddg-chat&project-name=ddg-chat&repository-name=ddg-chat) 
 
-[手动部署](https://github.com/leafmoes/DDG-Chat#手动部署)
+</div>
+
+## 手动部署
+
+<div align="center">
+
+[Vercel](https://github.com/leafmoes/DDG-Chat#vercel) / [Cloudflare Workers](https://github.com/leafmoes/DDG-Chat#cloudflare-workers) / [Docker](https://github.com/leafmoes/DDG-Chat#docker) / [Render](https://github.com/leafmoes/DDG-Chat#render) / [Hugging Face](https://github.com/leafmoes/DDG-Chat#hugging-face) / More Serverless
 
 </div>
 
