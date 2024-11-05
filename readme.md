@@ -126,6 +126,29 @@ npm install
 
 3. 打开文件 /api/index.js ，取消最后一行的注释，然后执行 `npm run publish:cf`
 
+### Hugging Face
+
+1. 创建一个新空间：[Create a new Space ](https://huggingface.co/new-space)
+    ```
+    Space name：ddg-chat
+    License： MIT
+    Select the Space SDK： docker （Blank）
+    Space hardware： free
+    ```
+
+2. 设置环境变量
+    转到 Settings -> Variables and secrets -> Variables 配置环境变量
+    貌似必须设置 `API_PREFIX`，由于抱抱脸的限制？
+    环境变量在帖子里面
+
+3. 编辑 README.md 文件
+    在 metadata 添加 `app_port: 8787` 这个 8787 取决于你 docker 镜像的端口
+
+4. 添加 Dockerfile 文件：
+    ```
+    FROM docker.io/leafmoes/ddg-chat:latest
+    ```
+
 ### Docker
 
 方法一：命令行构建

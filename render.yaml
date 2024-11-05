@@ -1,0 +1,20 @@
+version: "1"
+services:
+- type: web
+  name: ddg-chat
+  runtime: node
+  repo: https://github.com/leafmoes/ddg-chat
+  plan: free
+  envVars:
+  - key: API_PREFIX
+    value: '/'
+  - key: API_KEY
+    sync: false
+  - key: MAX_RETRY_COUNT
+    value: 3
+  - key: RETRY_DELAY
+    value: 5000
+  region: singapore
+  buildCommand: npm install
+  startCommand: npm start
+  healthCheckPath: /
