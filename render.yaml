@@ -6,6 +6,8 @@ services:
   repo: https://github.com/leafmoes/ddg-chat
   plan: free
   envVars:
+  - key: PORT
+    value: 8787
   - key: API_PREFIX
     value: '/'
   - key: API_KEY

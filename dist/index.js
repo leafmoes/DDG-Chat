@@ -6042,6 +6042,7 @@ var import_dotenv = __toESM(require_main(), 1);
 import_dotenv.default.config();
 var Config = class {
   constructor() {
+    this.PORT = process.env.PORT || "8787";
     this.API_PREFIX = process.env.API_PREFIX || "/";
     this.API_KEY = process.env.API_KEY || "";
     this.MAX_RETRY_COUNT = process.env.MAX_RETRY_COUNT || 3;
@@ -6092,7 +6093,7 @@ var logger = /* @__PURE__ */ __name((res, req) => {
 }, "logger");
 var router = n({
   before: [withBenchmarking, preflight, withAuth],
-  missing: () => s(404, "404 not found."),
+  missing: () => s(404, "404 Not Found. Please check whether the calling URL is correct."),
   finally: [corsify, logger]
 });
 router.get("/", () => o({ message: "API \u670D\u52A1\u8FD0\u884C\u4E2D~" }));
@@ -6117,7 +6118,7 @@ async function handleCompletion(request2) {
     const content = messagesPrepare(messages);
     return createCompletion(model, content, returnStream);
   } catch (err) {
-    s(500, err.message);
+    return s(500, err.message);
   }
 }
 __name(handleCompletion, "handleCompletion");
@@ -6334,9 +6335,9 @@ __name(newChatCompletionWithModel, "newChatCompletionWithModel");
   if (typeof addEventListener === "function")
     return;
   const ittyServer = createServerAdapter(router.fetch);
-  console.log(`Listening on http://localhost:${process.env.PORT || 8787}`);
+  console.log(`Listening on http://localhost:${config2.PORT}`);
   const httpServer = createServer2(ittyServer);
-  httpServer.listen(8787);
+  httpServer.listen(config2.PORT);
 })();
 var api_default = router;
 export {

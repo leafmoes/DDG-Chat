@@ -7,6 +7,7 @@ dotenv.config()
 
 class Config {
   constructor() {
+    this.PORT = process.env.PORT || 8787
     this.API_PREFIX = process.env.API_PREFIX || '/'
     this.API_KEY = process.env.API_KEY || ''
     this.MAX_RETRY_COUNT = process.env.MAX_RETRY_COUNT || 3
@@ -62,7 +63,7 @@ const logger = (res, req) => {
 
 const router = AutoRouter({
   before: [withBenchmarking, preflight, withAuth],
-  missing: () => error(404, '404 not found.'),
+  missing: () => error(404, '404 Not Found. Please check whether the calling URL is correct.'),
   finally: [corsify, logger],
 })
 
@@ -89,7 +90,7 @@ async function handleCompletion(request) {
     const content = messagesPrepare(messages)
     return createCompletion(model, content, returnStream)
   } catch (err) {
-    error(500, err.message)
+    return error(500, err.message)
   }
 }
 
@@ -319,9 +320,9 @@ function newChatCompletionWithModel(text, model) {
   if (typeof addEventListener === 'function') return
   // For Nodejs
   const ittyServer = createServerAdapter(router.fetch)
-  console.log(`Listening on http://localhost:${process.env.PORT || 8787}`)
+  console.log(`Listening on http://localhost:${config.PORT}`)
   const httpServer = createServer(ittyServer)
-  httpServer.listen(8787)
+  httpServer.listen(config.PORT)
 })()
 
 // export default router

@@ -64,7 +64,7 @@ jobs:
           file: Dockerfile
           push: true
           tags: |
-            ${{ env.DOCKER_HUB_REPO }}:lates1314521t
+            ${{ env.DOCKER_HUB_REPO }}:latest
             ${{ env.DOCKER_HUB_REPO }}:${{ steps.slug.outputs.sha7 }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
