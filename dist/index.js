@@ -49,15 +49,15 @@ var __publicField = (obj, key, value) => {
   return value;
 };
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-clear$immediate.js
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-clear$immediate.js
 var init_virtual_unenv_global_polyfill_clear_immediate = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-clear$immediate.js"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-clear$immediate.js"() {
     init_cloudflare();
     globalThis.clearImmediate = clearImmediateFallback;
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/_internal/utils.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/_internal/utils.mjs
 function rawHeaders(headers) {
   const rawHeaders2 = [];
   for (const key in headers) {
@@ -102,7 +102,7 @@ function notImplementedClass(name) {
   };
 }
 var init_utils = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/_internal/utils.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/_internal/utils.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -117,10 +117,10 @@ var init_utils = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/mock/noop.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/mock/noop.mjs
 var noop_default;
 var init_noop = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/mock/noop.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/mock/noop.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -131,10 +131,10 @@ var init_noop = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/timers/internal/immediate.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/timers/internal/immediate.mjs
 var Immediate;
 var init_immediate = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/timers/internal/immediate.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/timers/internal/immediate.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -172,7 +172,7 @@ var init_immediate = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/timers/internal/set-immediate.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/timers/internal/set-immediate.mjs
 function setImmediateFallbackPromises(value) {
   return new Promise((res) => {
     res(value);
@@ -185,7 +185,7 @@ function clearImmediateFallback(immediate) {
   immediate?.[Symbol.dispose]();
 }
 var init_set_immediate = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/timers/internal/set-immediate.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/timers/internal/set-immediate.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -199,9 +199,9 @@ var init_set_immediate = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/timers/$cloudflare.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/timers/$cloudflare.mjs
 var init_cloudflare = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/timers/$cloudflare.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/timers/$cloudflare.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -211,15 +211,15 @@ var init_cloudflare = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-set$immediate.js
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-set$immediate.js
 var init_virtual_unenv_global_polyfill_set_immediate = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-set$immediate.js"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-set$immediate.js"() {
     init_cloudflare();
     globalThis.setImmediate = setImmediateFallback;
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/mock/proxy.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/mock/proxy.mjs
 function createMock(name, overrides = {}) {
   fn.prototype.name = name;
   const props = {};
@@ -254,7 +254,7 @@ function createMock(name, overrides = {}) {
 }
 var fn, proxy_default;
 var init_proxy = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/mock/proxy.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/mock/proxy.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -267,11 +267,11 @@ var init_proxy = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/console/index.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/console/index.mjs
 import { Writable } from "node:stream";
 var _console, _ignoreErrors, _stderr, _stdout, log, info, trace, debug, table, error, warn, createTask, assert, clear, count, countReset, dir, dirxml, group, groupEnd, groupCollapsed, profile, profileEnd, time, timeEnd, timeLog, timeStamp, Console;
 var init_console = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/console/index.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/console/index.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -313,10 +313,10 @@ var init_console = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/console/$cloudflare.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/console/$cloudflare.mjs
 var workerdConsole, assert2, clear2, context, count2, countReset2, createTask2, debug2, dir2, dirxml2, error2, group2, groupCollapsed2, groupEnd2, info2, log2, profile2, profileEnd2, table2, time2, timeEnd2, timeLog2, timeStamp2, trace2, warn2, cloudflare_default;
 var init_cloudflare2 = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/console/$cloudflare.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/console/$cloudflare.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -369,18 +369,18 @@ var init_cloudflare2 = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-console.js
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-console.js
 var init_virtual_unenv_global_polyfill_console = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-console.js"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-console.js"() {
     init_cloudflare2();
     globalThis.console = cloudflare_default;
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/_entry.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/_entry.mjs
 var _supportedEntryTypes, _PerformanceEntry, PerformanceEntry, _PerformanceMark, PerformanceMark, _PerformanceMeasure, PerformanceMeasure, _PerformanceResourceTiming, PerformanceResourceTiming;
 var init_entry = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/_entry.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/_entry.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -460,10 +460,10 @@ var init_entry = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/_performance.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/_performance.mjs
 var _timeOrigin, _Performance, Performance, performance2;
 var init_performance = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/_performance.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/_performance.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -556,10 +556,10 @@ var init_performance = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/_observer.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/_observer.mjs
 var _PerformanceObserver, PerformanceObserver, _PerformanceObserverEntryList, PerformanceObserverEntryList;
 var init_observer = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/_observer.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/_observer.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -603,9 +603,9 @@ var init_observer = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/index.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/index.mjs
 var init_performance2 = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/index.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/web/performance/index.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -617,7 +617,7 @@ var init_performance2 = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/polyfill/global-this.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/polyfill/global-this.mjs
 function getGlobal() {
   if (typeof globalThis !== "undefined") {
     return globalThis;
@@ -635,7 +635,7 @@ function getGlobal() {
 }
 var global_this_default;
 var init_global_this = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/polyfill/global-this.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/polyfill/global-this.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -646,10 +646,10 @@ var init_global_this = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/polyfill/performance.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/polyfill/performance.mjs
 var performance_default;
 var init_performance3 = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/polyfill/performance.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/polyfill/performance.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -669,18 +669,18 @@ var init_performance3 = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-performance.js
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-performance.js
 var init_virtual_unenv_global_polyfill_performance = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-performance.js"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-performance.js"() {
     init_performance3();
     globalThis.performance = performance_default;
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/mock/empty.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/mock/empty.mjs
 var empty_default;
 var init_empty = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/mock/empty.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/mock/empty.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -694,10 +694,10 @@ var init_empty = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/internal/env.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/internal/env.mjs
 var _envShim, _processEnv, _getEnv, env;
 var init_env = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/internal/env.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/internal/env.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -733,7 +733,7 @@ var init_env = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/internal/time.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/internal/time.mjs
 function _createNextTickWithTimeout() {
   let queue = [];
   let draining = false;
@@ -787,7 +787,7 @@ function _createNextTickWithTimeout() {
 }
 var hrtime, nextTick;
 var init_time = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/internal/time.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/internal/time.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -822,13 +822,13 @@ var init_time = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/internal/process.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/internal/process.mjs
 function noop() {
   return process2;
 }
 var title, argv, version, versions, on, addListener, once, off, removeListener, removeAllListeners, emit, prependListener, prependOnceListener, listeners, listenerCount, binding, _cwd, cwd, chdir, umask, getegid, geteuid, getgid, getuid, getgroups, getBuiltinModule, abort, allowedNodeEnvironmentFlags, arch, argv0, config, connected, constrainedMemory, availableMemory, cpuUsage, debugPort, dlopen, disconnect, emitWarning, eventNames, execArgv, execPath, exit, features, getActiveResourcesInfo, getMaxListeners, kill, memoryUsage, pid, platform, ppid, rawListeners, release, report, resourceUsage, setegid, seteuid, setgid, setgroups, setuid, setMaxListeners, setSourceMapsEnabled, stdout, stderr, stdin, traceDeprecation, uptime, exitCode, setUncaughtExceptionCaptureCallback, hasUncaughtExceptionCaptureCallback, sourceMapsEnabled, loadEnvFile, mainModule, permission, channel, throwDeprecation, assert3, openStdin, _debugEnd, _debugProcess, _fatalException, _getActiveHandles, _getActiveRequests, _kill, _preload_modules, _rawDebug, _startProfilerIdleNotifier, _stopProfilerIdleNotifier, _tickCallback, _linkedBinding, domain, initgroups, moduleLoadList, reallyExit, _exiting, _events, _eventsCount, _maxListeners, process2;
 var init_process = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/internal/process.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/internal/process.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -1134,10 +1134,10 @@ var init_process = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/$cloudflare.mjs
-var unpatchedGlobalThisProcess, getBuiltinModule2, workerdProcess, env2, nextTick2, _process, cloudflare_default2;
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/$cloudflare.mjs
+var unpatchedGlobalThisProcess, getBuiltinModule2, workerdProcess, env2, exit2, nextTick2, platform2, _process, cloudflare_default2;
 var init_cloudflare3 = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/$cloudflare.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/process/$cloudflare.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -1147,7 +1147,7 @@ var init_cloudflare3 = __esm({
     unpatchedGlobalThisProcess = globalThis["process"];
     getBuiltinModule2 = unpatchedGlobalThisProcess.getBuiltinModule;
     workerdProcess = getBuiltinModule2("node:process");
-    ({ env: env2, nextTick: nextTick2 } = workerdProcess);
+    ({ env: env2, exit: exit2, nextTick: nextTick2, platform: platform2 } = workerdProcess);
     _process = {
       /**
        * manually unroll unenv-polyfilled-symbols to make it tree-shakeable
@@ -1155,19 +1155,15 @@ var init_cloudflare3 = __esm({
       // @ts-expect-error (not typed)
       _debugEnd,
       _debugProcess,
-      // TODO: implemented yet in unenv
-      //_events,
+      _events,
       _eventsCount,
-      // TODO: implemented yet in unenv
-      //_exiting,
+      _exiting,
       _fatalException,
       _getActiveHandles,
       _getActiveRequests,
       _kill,
-      // TODO: implemented yet in unenv
-      //_linkedBinding,
-      // TODO: implemented yet in unenv
-      //_maxListeners,
+      _linkedBinding,
+      _maxListeners,
       _preload_modules,
       _rawDebug,
       _startProfilerIdleNotifier,
@@ -1189,14 +1185,13 @@ var init_cloudflare3 = __esm({
       cwd,
       debugPort,
       dlopen,
-      // TODO: implemented yet in unenv
-      //domain,
+      domain,
       emit,
       emitWarning,
       eventNames,
       execArgv,
       execPath,
-      exit,
+      exit: exit2,
       exitCode,
       features,
       getActiveResourcesInfo,
@@ -1208,28 +1203,24 @@ var init_cloudflare3 = __esm({
       getuid,
       hasUncaughtExceptionCaptureCallback,
       hrtime,
-      // TODO: implemented yet in unenv
-      //initgroups,
+      initgroups,
       kill,
       listenerCount,
       listeners,
       loadEnvFile,
       memoryUsage,
-      // TODO: implemented yet in unenv
-      //moduleLoadList,
+      moduleLoadList,
       off,
       on,
       once,
-      // TODO: implemented yet in unenv
-      //openStdin,
+      openStdin,
       pid,
-      platform,
+      platform: platform2,
       ppid,
       prependListener,
       prependOnceListener,
       rawListeners,
-      // TODO: implemented yet in unenv
-      //reallyExit,
+      reallyExit,
       release,
       removeAllListeners,
       removeListener,
@@ -1263,9 +1254,9 @@ var init_cloudflare3 = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-process.js
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-process.js
 var init_virtual_unenv_global_polyfill_process = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-process.js"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/_virtual_unenv_global_polyfill-process.js"() {
     init_cloudflare3();
     globalThis.process = cloudflare_default2;
   }
@@ -1302,7 +1293,7 @@ var require_global_ponyfill = __commonJS({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/classes.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/classes.mjs
 var classes_exports = {};
 __export(classes_exports, {
   Dir: () => Dir,
@@ -1316,7 +1307,7 @@ __export(classes_exports, {
 });
 var Dir, Dirent, Stats, ReadStream, WriteStream, FileReadStream, FileWriteStream, StatsFs;
 var init_classes = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/classes.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/classes.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -1334,7 +1325,7 @@ var init_classes = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/constants.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/constants.mjs
 var constants_exports = {};
 __export(constants_exports, {
   F_OK: () => F_OK,
@@ -1345,7 +1336,7 @@ __export(constants_exports, {
 });
 var F_OK, R_OK, W_OK, X_OK, constants;
 var init_constants = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/constants.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/constants.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -1416,7 +1407,7 @@ var init_constants = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/promises.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/promises.mjs
 var promises_exports = {};
 __export(promises_exports, {
   access: () => access,
@@ -1455,7 +1446,7 @@ __export(promises_exports, {
 });
 var access, copyFile, cp, open, opendir, rename, truncate, rm, rmdir, mkdir, readdir, readlink, symlink, lstat, stat, link, unlink, chmod, lchmod, lchown, chown, utimes, lutimes, realpath, mkdtemp, writeFile, appendFile, readFile, watch, statfs, glob, promises_default;
 var init_promises = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/promises.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/promises.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -1518,7 +1509,7 @@ var init_promises = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/fs.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/fs.mjs
 var fs_exports = {};
 __export(fs_exports, {
   _toUnixTimestamp: () => _toUnixTimestamp,
@@ -1626,7 +1617,7 @@ function callbackify(fn2) {
 }
 var access2, appendFile2, chown2, chmod2, copyFile2, cp2, lchown2, lchmod2, link2, lstat2, lutimes2, mkdir2, mkdtemp2, realpath2, open2, opendir2, readdir2, readFile2, readlink2, rename2, rm2, rmdir2, stat2, symlink2, truncate2, unlink2, utimes2, writeFile2, statfs2, close, createReadStream, createWriteStream, exists, fchown, fchmod, fdatasync, fstat, fsync, ftruncate, futimes, lstatSync, read, readv, realpathSync, statSync, unwatchFile, watch2, watchFile, write, writev, _toUnixTimestamp, openAsBlob, glob2, appendFileSync, accessSync, chownSync, chmodSync, closeSync, copyFileSync, cpSync, existsSync, fchownSync, fchmodSync, fdatasyncSync, fstatSync, fsyncSync, ftruncateSync, futimesSync, lchownSync, lchmodSync, linkSync, lutimesSync, mkdirSync, mkdtempSync, openSync, opendirSync, readdirSync, readSync, readvSync, readFileSync, readlinkSync, renameSync, rmSync, rmdirSync, symlinkSync, truncateSync, unlinkSync, utimesSync, writeFileSync, writeSync, writevSync, statfsSync, globSync;
 var init_fs = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/fs.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/internal/fs.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -1745,10 +1736,10 @@ var init_fs = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/index.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/index.mjs
 var promises, fs_default;
 var init_fs2 = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/index.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/fs/index.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -1797,10 +1788,10 @@ var require_path = __commonJS({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/constants/iternal/os.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/constants/iternal/os.mjs
 var UV_UDP_REUSEADDR, RTLD_LAZY, RTLD_NOW, RTLD_GLOBAL, RTLD_LOCAL, RTLD_DEEPBIND, E2BIG, EACCES, EADDRINUSE, EADDRNOTAVAIL, EAFNOSUPPORT, EAGAIN, EALREADY, EBADF, EBADMSG, EBUSY, ECANCELED, ECHILD, ECONNABORTED, ECONNREFUSED, ECONNRESET, EDEADLK, EDESTADDRREQ, EDOM, EDQUOT, EEXIST, EFAULT, EFBIG, EHOSTUNREACH, EIDRM, EILSEQ, EINPROGRESS, EINTR, EINVAL, EIO, EISCONN, EISDIR, ELOOP, EMFILE, EMLINK, EMSGSIZE, EMULTIHOP, ENAMETOOLONG, ENETDOWN, ENETRESET, ENETUNREACH, ENFILE, ENOBUFS, ENODATA, ENODEV, ENOENT, ENOEXEC, ENOLCK, ENOLINK, ENOMEM, ENOMSG, ENOPROTOOPT, ENOSPC, ENOSR, ENOSTR, ENOSYS, ENOTCONN, ENOTDIR, ENOTEMPTY, ENOTSOCK, ENOTSUP, ENOTTY, ENXIO, EOPNOTSUPP, EOVERFLOW, EPERM, EPIPE, EPROTO, EPROTONOSUPPORT, EPROTOTYPE, ERANGE, EROFS, ESPIPE, ESRCH, ESTALE, ETIME, ETIMEDOUT, ETXTBSY, EWOULDBLOCK, EXDEV, WSAEINTR, WSAEBADF, WSAEACCES, WSAEFAULT, WSAEINVAL, WSAEMFILE, WSAEWOULDBLOCK, WSAEINPROGRESS, WSAEALREADY, WSAENOTSOCK, WSAEDESTADDRREQ, WSAEMSGSIZE, WSAEPROTOTYPE, WSAENOPROTOOPT, WSAEPROTONOSUPPORT, WSAESOCKTNOSUPPORT, WSAEOPNOTSUPP, WSAEPFNOSUPPORT, WSAEAFNOSUPPORT, WSAEADDRINUSE, WSAEADDRNOTAVAIL, WSAENETDOWN, WSAENETUNREACH, WSAENETRESET, WSAECONNABORTED, WSAECONNRESET, WSAENOBUFS, WSAEISCONN, WSAENOTCONN, WSAESHUTDOWN, WSAETOOMANYREFS, WSAETIMEDOUT, WSAECONNREFUSED, WSAELOOP, WSAENAMETOOLONG, WSAEHOSTDOWN, WSAEHOSTUNREACH, WSAENOTEMPTY, WSAEPROCLIM, WSAEUSERS, WSAEDQUOT, WSAESTALE, WSAEREMOTE, WSASYSNOTREADY, WSAVERNOTSUPPORTED, WSANOTINITIALISED, WSAEDISCON, WSAENOMORE, WSAECANCELLED, WSAEINVALIDPROCTABLE, WSAEINVALIDPROVIDER, WSAEPROVIDERFAILEDINIT, WSASYSCALLFAILURE, WSASERVICE_NOT_FOUND, WSATYPE_NOT_FOUND, WSA_E_NO_MORE, WSA_E_CANCELLED, WSAEREFUSED, SIGHUP, SIGINT, SIGQUIT, SIGILL, SIGTRAP, SIGABRT, SIGIOT, SIGBUS, SIGFPE, SIGKILL, SIGUSR1, SIGSEGV, SIGUSR2, SIGPIPE, SIGALRM, SIGTERM, SIGCHLD, SIGCONT, SIGSTOP, SIGTSTP, SIGTTIN, SIGTTOU, SIGURG, SIGXCPU, SIGXFSZ, SIGVTALRM, SIGPROF, SIGWINCH, SIGIO, SIGINFO, SIGSYS, SIGPOLL, SIGPWR, SIGBREAK, SIGSTKFLT, SIGUNUSED, SIGLOST, PRIORITY_LOW, PRIORITY_BELOW_NORMAL, PRIORITY_NORMAL, PRIORITY_ABOVE_NORMAL, PRIORITY_HIGH, PRIORITY_HIGHEST, os_default;
 var init_os = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/constants/iternal/os.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/constants/iternal/os.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -2191,10 +2182,10 @@ var init_os = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/os/internal/constants.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/os/internal/constants.mjs
 var constants2;
 var init_constants2 = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/os/internal/constants.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/os/internal/constants.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -2207,10 +2198,10 @@ var init_constants2 = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/os/index.mjs
-var NUM_CPUS, availableParallelism, arch2, machine, endianness, cpus, getPriority, setPriority, homedir, tmpdir, devNull, freemem, totalmem, loadavg, uptime2, hostname, networkInterfaces, platform2, type, release2, version2, userInfo, EOL, os_default2;
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/os/index.mjs
+var NUM_CPUS, availableParallelism, arch2, machine, endianness, cpus, getPriority, setPriority, homedir, tmpdir, devNull, freemem, totalmem, loadavg, uptime2, hostname, networkInterfaces, platform3, type, release2, version2, userInfo, EOL, os_default2;
 var init_os2 = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/os/index.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/os/index.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -2279,7 +2270,7 @@ var init_os2 = __esm({
         ]
       };
     }, "networkInterfaces");
-    platform2 = /* @__PURE__ */ __name(() => "linux", "platform");
+    platform3 = /* @__PURE__ */ __name(() => "linux", "platform");
     type = /* @__PURE__ */ __name(() => "Linux", "type");
     release2 = /* @__PURE__ */ __name(() => "", "release");
     version2 = /* @__PURE__ */ __name(() => "", "version");
@@ -2315,7 +2306,7 @@ var init_os2 = __esm({
       loadavg,
       machine,
       networkInterfaces,
-      platform: platform2,
+      platform: platform3,
       release: release2,
       setPriority,
       tmpdir,
@@ -2341,7 +2332,7 @@ var require_os = __commonJS({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/internal/web.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/internal/web.mjs
 var web_exports = {};
 __export(web_exports, {
   getRandomValues: () => getRandomValues,
@@ -2350,7 +2341,7 @@ __export(web_exports, {
 });
 var subtle, randomUUID, getRandomValues;
 var init_web = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/internal/web.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/internal/web.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -2366,7 +2357,7 @@ var init_web = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/internal/node.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/internal/node.mjs
 var node_exports = {};
 __export(node_exports, {
   Certificate: () => Certificate,
@@ -2440,7 +2431,7 @@ __export(node_exports, {
 });
 var MAX_RANDOM_VALUE_BYTES, webcrypto, randomBytes, fips, constants3, checkPrime, checkPrimeSync, createCipher, createDecipher, pseudoRandomBytes, createCipheriv, createDecipheriv, createDiffieHellman, createDiffieHellmanGroup, createECDH, createHash, createHmac, createPrivateKey, createPublicKey, createSecretKey, createSign, createVerify, diffieHellman, generatePrime, generatePrimeSync, getCiphers, getCipherInfo, getCurves, getDiffieHellman, getHashes, hkdf, hkdfSync, pbkdf2, pbkdf2Sync, generateKeyPair, generateKeyPairSync, generateKey, generateKeySync, privateDecrypt, privateEncrypt, publicDecrypt, publicEncrypt, randomFill, randomFillSync, randomInt, scrypt, scryptSync, sign, setEngine, timingSafeEqual, getFips, setFips, verify, secureHeapUsed, hash, Certificate, Cipher, Cipheriv, Decipher, Decipheriv, DiffieHellman, DiffieHellmanGroup, ECDH, Hash, Hmac, KeyObject, Sign, Verify, X509Certificate;
 var init_node = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/internal/node.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/internal/node.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -2603,10 +2594,10 @@ var init_node = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/internal/constants.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/internal/constants.mjs
 var constants4, constants_default;
 var init_constants3 = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/internal/constants.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/internal/constants.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -2718,10 +2709,10 @@ var init_constants3 = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/index.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/index.mjs
 var crypto_default;
 var init_crypto = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/index.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/index.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -2742,10 +2733,10 @@ var init_crypto = __esm({
   }
 });
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/$cloudflare.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/$cloudflare.mjs
 var workerdCrypto, Certificate2, DiffieHellman2, DiffieHellmanGroup2, Hash2, Hmac2, KeyObject2, X509Certificate2, checkPrime2, checkPrimeSync2, createDiffieHellman2, createDiffieHellmanGroup2, createHash2, createHmac2, createPrivateKey2, createPublicKey2, createSecretKey2, generateKey2, generateKeyPair2, generateKeyPairSync2, generateKeySync2, generatePrime2, generatePrimeSync2, getCiphers2, getCurves2, getDiffieHellman2, getFips2, getHashes2, hkdf2, hkdfSync2, pbkdf22, pbkdf2Sync2, randomBytes2, randomFill2, randomFillSync2, randomInt2, randomUUID2, scrypt2, scryptSync2, secureHeapUsed2, setEngine2, setFips2, subtle2, timingSafeEqual2, getRandomValues2, webcrypto2, fips2, cloudflare_default3;
 var init_cloudflare4 = __esm({
-  "D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/$cloudflare.mjs"() {
+  "D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/crypto/$cloudflare.mjs"() {
     init_virtual_unenv_global_polyfill_process();
     init_virtual_unenv_global_polyfill_performance();
     init_virtual_unenv_global_polyfill_console();
@@ -3018,9 +3009,9 @@ var require_main = __commonJS({
       const vaultPath = _vaultPath(options);
       const result = DotenvModule.configDotenv({ path: vaultPath });
       if (!result.parsed) {
-        const err = new Error(`MISSING_DATA: Cannot parse ${vaultPath} for an unknown reason`);
-        err.code = "MISSING_DATA";
-        throw err;
+        const err2 = new Error(`MISSING_DATA: Cannot parse ${vaultPath} for an unknown reason`);
+        err2.code = "MISSING_DATA";
+        throw err2;
       }
       const keys = _dotenvKey(options).split(",");
       const length = keys.length;
@@ -3068,30 +3059,30 @@ var require_main = __commonJS({
         uri = new URL(dotenvKey);
       } catch (error3) {
         if (error3.code === "ERR_INVALID_URL") {
-          const err = new Error("INVALID_DOTENV_KEY: Wrong format. Must be in valid uri format like dotenv://:key_1234@dotenvx.com/vault/.env.vault?environment=development");
-          err.code = "INVALID_DOTENV_KEY";
-          throw err;
+          const err2 = new Error("INVALID_DOTENV_KEY: Wrong format. Must be in valid uri format like dotenv://:key_1234@dotenvx.com/vault/.env.vault?environment=development");
+          err2.code = "INVALID_DOTENV_KEY";
+          throw err2;
         }
         throw error3;
       }
       const key = uri.password;
       if (!key) {
-        const err = new Error("INVALID_DOTENV_KEY: Missing key part");
-        err.code = "INVALID_DOTENV_KEY";
-        throw err;
+        const err2 = new Error("INVALID_DOTENV_KEY: Missing key part");
+        err2.code = "INVALID_DOTENV_KEY";
+        throw err2;
       }
       const environment = uri.searchParams.get("environment");
       if (!environment) {
-        const err = new Error("INVALID_DOTENV_KEY: Missing environment part");
-        err.code = "INVALID_DOTENV_KEY";
-        throw err;
+        const err2 = new Error("INVALID_DOTENV_KEY: Missing environment part");
+        err2.code = "INVALID_DOTENV_KEY";
+        throw err2;
       }
       const environmentKey = `DOTENV_VAULT_${environment.toUpperCase()}`;
       const ciphertext = result.parsed[environmentKey];
       if (!ciphertext) {
-        const err = new Error(`NOT_FOUND_DOTENV_ENVIRONMENT: Cannot locate environment ${environmentKey} in your .env.vault file.`);
-        err.code = "NOT_FOUND_DOTENV_ENVIRONMENT";
-        throw err;
+        const err2 = new Error(`NOT_FOUND_DOTENV_ENVIRONMENT: Cannot locate environment ${environmentKey} in your .env.vault file.`);
+        err2.code = "NOT_FOUND_DOTENV_ENVIRONMENT";
+        throw err2;
       }
       return { ciphertext, key };
     }
@@ -3206,13 +3197,13 @@ var require_main = __commonJS({
         const invalidKeyLength = error3.message === "Invalid key length";
         const decryptionFailed = error3.message === "Unsupported state or unable to authenticate data";
         if (isRange || invalidKeyLength) {
-          const err = new Error("INVALID_DOTENV_KEY: It must be 64 characters long (or more)");
-          err.code = "INVALID_DOTENV_KEY";
-          throw err;
+          const err2 = new Error("INVALID_DOTENV_KEY: It must be 64 characters long (or more)");
+          err2.code = "INVALID_DOTENV_KEY";
+          throw err2;
         } else if (decryptionFailed) {
-          const err = new Error("DECRYPTION_FAILED: Please check your DOTENV_KEY");
-          err.code = "DECRYPTION_FAILED";
-          throw err;
+          const err2 = new Error("DECRYPTION_FAILED: Please check your DOTENV_KEY");
+          err2.code = "DECRYPTION_FAILED";
+          throw err2;
         } else {
           throw error3;
         }
@@ -3223,9 +3214,9 @@ var require_main = __commonJS({
       const debug3 = Boolean(options && options.debug);
       const override = Boolean(options && options.override);
       if (typeof parsed !== "object") {
-        const err = new Error("OBJECT_REQUIRED: Please check the processEnv argument being passed to populate");
-        err.code = "OBJECT_REQUIRED";
-        throw err;
+        const err2 = new Error("OBJECT_REQUIRED: Please check the processEnv argument being passed to populate");
+        err2.code = "OBJECT_REQUIRED";
+        throw err2;
       }
       for (const key of Object.keys(parsed)) {
         if (Object.prototype.hasOwnProperty.call(processEnv, key)) {
@@ -3671,7 +3662,7 @@ function isolateObject(originalCtx, waitUntilPromises) {
     get(originalCtx2, prop) {
       if (waitUntilPromises != null && prop === "waitUntil") {
         return /* @__PURE__ */ __name(function waitUntil(promise) {
-          waitUntilPromises.push(promise.catch((err) => console.error(err)));
+          waitUntilPromises.push(promise.catch((err2) => console.error(err2)));
         }, "waitUntil");
       }
       const extraPropVal = extraProps[prop];
@@ -3760,8 +3751,8 @@ function handleAbortSignalAndPromiseResponse(response$, abortSignal) {
     }, "abortSignalFetchErrorHandler"));
     response$.then(/* @__PURE__ */ __name(function fetchSuccessHandler(res) {
       deferred$.resolve(res);
-    }, "fetchSuccessHandler")).catch(/* @__PURE__ */ __name(function fetchErrorHandler(err) {
-      deferred$.reject(err);
+    }, "fetchSuccessHandler")).catch(/* @__PURE__ */ __name(function fetchErrorHandler(err2) {
+      deferred$.reject(err2);
     }, "fetchErrorHandler"));
     return deferred$.promise;
   }
@@ -4011,24 +4002,24 @@ function createServerAdapter(serverAdapterBaseObject, options) {
       req: nodeRequest,
       res: nodeResponse,
       waitUntil(cb) {
-        waitUntilPromises.push(cb.catch((err) => console.error(err)));
+        waitUntilPromises.push(cb.catch((err2) => console.error(err2)));
       }
     };
     let response$;
     try {
       response$ = handleNodeRequestAndResponse(nodeRequest, nodeResponse, defaultServerContext, ...ctx);
-    } catch (err) {
-      response$ = handleErrorFromRequestHandler(err, fetchAPI.Response);
+    } catch (err2) {
+      response$ = handleErrorFromRequestHandler(err2, fetchAPI.Response);
     }
     if (isPromise(response$)) {
-      return response$.catch((e) => handleErrorFromRequestHandler(e, fetchAPI.Response)).then((response) => sendNodeResponse(response, nodeResponse, nodeRequest)).catch((err) => {
-        console.error(`Unexpected error while handling request: ${err.message || err}`);
+      return response$.catch((e) => handleErrorFromRequestHandler(e, fetchAPI.Response)).then((response) => sendNodeResponse(response, nodeResponse, nodeRequest)).catch((err2) => {
+        console.error(`Unexpected error while handling request: ${err2.message || err2}`);
       });
     }
     try {
       return sendNodeResponse(response$, nodeResponse, nodeRequest);
-    } catch (err) {
-      console.error(`Unexpected error while handling request: ${err.message || err}`);
+    } catch (err2) {
+      console.error(`Unexpected error while handling request: ${err2.message || err2}`);
     }
   }
   __name(requestListener, "requestListener");
@@ -4038,7 +4029,7 @@ function createServerAdapter(serverAdapterBaseObject, options) {
       res,
       req,
       waitUntil(cb) {
-        waitUntilPromises.push(cb.catch((err) => console.error(err)));
+        waitUntilPromises.push(cb.catch((err2) => console.error(err2)));
       }
     };
     const filteredCtxParts = ctx.filter((partCtx) => partCtx != null);
@@ -4066,26 +4057,26 @@ function createServerAdapter(serverAdapterBaseObject, options) {
     let response$;
     try {
       response$ = handleRequest(request2, serverContext);
-    } catch (err) {
-      response$ = handleErrorFromRequestHandler(err, fetchAPI.Response);
+    } catch (err2) {
+      response$ = handleErrorFromRequestHandler(err2, fetchAPI.Response);
     }
     if (isPromise(response$)) {
       return response$.catch((e) => handleErrorFromRequestHandler(e, fetchAPI.Response)).then((response) => {
         if (!signal.aborted && !resEnded) {
           return sendResponseToUwsOpts(res, response, signal);
         }
-      }).catch((err) => {
+      }).catch((err2) => {
         console.error(`Unexpected error while handling request: 
-${err.stack || err.message || err}`);
+${err2.stack || err2.message || err2}`);
       });
     }
     try {
       if (!signal.aborted && !resEnded) {
         return sendResponseToUwsOpts(res, response$, signal);
       }
-    } catch (err) {
+    } catch (err2) {
       console.error(`Unexpected error while handling request: 
-${err.stack || err.message || err}`);
+${err2.stack || err2.message || err2}`);
     }
   }
   __name(handleUWS, "handleUWS");
@@ -4279,7 +4270,7 @@ var y = /* @__PURE__ */ __name((e = {}) => {
   } };
 }, "y");
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/index.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/index.mjs
 init_virtual_unenv_global_polyfill_process();
 init_virtual_unenv_global_polyfill_performance();
 init_virtual_unenv_global_polyfill_console();
@@ -4288,7 +4279,7 @@ init_virtual_unenv_global_polyfill_clear_immediate();
 init_utils();
 init_proxy();
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/internal/consts.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/internal/consts.mjs
 var consts_exports = {};
 __export(consts_exports, {
   METHODS: () => METHODS,
@@ -4404,29 +4395,14 @@ var STATUS_CODES = {
 };
 var maxHeaderSize = 16384;
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/internal/request.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/internal/request.mjs
 init_virtual_unenv_global_polyfill_process();
 init_virtual_unenv_global_polyfill_performance();
 init_virtual_unenv_global_polyfill_console();
 init_virtual_unenv_global_polyfill_set_immediate();
 init_virtual_unenv_global_polyfill_clear_immediate();
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/net/index.mjs
-init_virtual_unenv_global_polyfill_process();
-init_virtual_unenv_global_polyfill_performance();
-init_virtual_unenv_global_polyfill_console();
-init_virtual_unenv_global_polyfill_set_immediate();
-init_virtual_unenv_global_polyfill_clear_immediate();
-init_utils();
-
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/net/internal/socket.mjs
-init_virtual_unenv_global_polyfill_process();
-init_virtual_unenv_global_polyfill_performance();
-init_virtual_unenv_global_polyfill_console();
-init_virtual_unenv_global_polyfill_set_immediate();
-init_virtual_unenv_global_polyfill_clear_immediate();
-
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/stream/internal/duplex.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/net/index.mjs
 init_virtual_unenv_global_polyfill_process();
 init_virtual_unenv_global_polyfill_performance();
 init_virtual_unenv_global_polyfill_console();
@@ -4434,7 +4410,14 @@ init_virtual_unenv_global_polyfill_set_immediate();
 init_virtual_unenv_global_polyfill_clear_immediate();
 init_utils();
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/stream/internal/readable.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/net/internal/socket.mjs
+init_virtual_unenv_global_polyfill_process();
+init_virtual_unenv_global_polyfill_performance();
+init_virtual_unenv_global_polyfill_console();
+init_virtual_unenv_global_polyfill_set_immediate();
+init_virtual_unenv_global_polyfill_clear_immediate();
+
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/stream/internal/duplex.mjs
 init_virtual_unenv_global_polyfill_process();
 init_virtual_unenv_global_polyfill_performance();
 init_virtual_unenv_global_polyfill_console();
@@ -4442,21 +4425,29 @@ init_virtual_unenv_global_polyfill_set_immediate();
 init_virtual_unenv_global_polyfill_clear_immediate();
 init_utils();
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/events/index.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/stream/internal/readable.mjs
+init_virtual_unenv_global_polyfill_process();
+init_virtual_unenv_global_polyfill_performance();
+init_virtual_unenv_global_polyfill_console();
+init_virtual_unenv_global_polyfill_set_immediate();
+init_virtual_unenv_global_polyfill_clear_immediate();
+init_utils();
+
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/events/index.mjs
 init_virtual_unenv_global_polyfill_process();
 init_virtual_unenv_global_polyfill_performance();
 init_virtual_unenv_global_polyfill_console();
 init_virtual_unenv_global_polyfill_set_immediate();
 init_virtual_unenv_global_polyfill_clear_immediate();
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/events/internal/events.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/events/internal/events.mjs
 init_virtual_unenv_global_polyfill_process();
 init_virtual_unenv_global_polyfill_performance();
 init_virtual_unenv_global_polyfill_console();
 init_virtual_unenv_global_polyfill_set_immediate();
 init_virtual_unenv_global_polyfill_clear_immediate();
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/async_hooks/$cloudflare.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/async_hooks/$cloudflare.mjs
 init_virtual_unenv_global_polyfill_process();
 init_virtual_unenv_global_polyfill_performance();
 init_virtual_unenv_global_polyfill_console();
@@ -4465,7 +4456,7 @@ init_virtual_unenv_global_polyfill_clear_immediate();
 var workerdAsyncHooks = process.getBuiltinModule("node:async_hooks");
 var { AsyncLocalStorage, AsyncResource } = workerdAsyncHooks;
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/events/internal/events.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/events/internal/events.mjs
 var defaultMaxListeners = 10;
 var AsyncIteratorPrototype = Object.getPrototypeOf(
   Object.getPrototypeOf(async function* () {
@@ -4638,9 +4629,9 @@ var __EventEmitter = class {
       } catch {
         stringifiedEr = er;
       }
-      const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
-      err.context = er;
-      throw err;
+      const err2 = new ERR_UNHANDLED_ERROR(stringifiedEr);
+      err2.context = er;
+      throw err2;
     }
     const handler = events[type2];
     if (handler === void 0)
@@ -4989,16 +4980,16 @@ var on2 = /* @__PURE__ */ __name(function on22(emitter, event, options = {}) {
       return() {
         return closeHandler();
       },
-      throw(err) {
-        if (!err || !(err instanceof Error)) {
+      throw(err2) {
+        if (!err2 || !(err2 instanceof Error)) {
           throw new ERR_INVALID_ARG_TYPE(
             "EventEmitter.AsyncIterator",
             "Error",
             // @ts-expect-error
-            err
+            err2
           );
         }
-        errorHandler(err);
+        errorHandler(err2);
       },
       [Symbol.asyncIterator]() {
         return this;
@@ -5067,11 +5058,11 @@ var on2 = /* @__PURE__ */ __name(function on22(emitter, event, options = {}) {
       unconsumedPromises.shift().resolve(createIterResult(value, false));
   }
   __name(eventHandler, "eventHandler");
-  function errorHandler(err) {
+  function errorHandler(err2) {
     if (unconsumedPromises.isEmpty())
-      error3 = err;
+      error3 = err2;
     else
-      unconsumedPromises.shift().reject(err);
+      unconsumedPromises.shift().reject(err2);
     closeHandler();
   }
   __name(errorHandler, "errorHandler");
@@ -5093,14 +5084,14 @@ var once2 = /* @__PURE__ */ __name(async function once22(emitter, name, options 
     throw new AbortError(void 0, { cause: signal?.reason });
   }
   return new Promise((resolve, reject) => {
-    const errorListener = /* @__PURE__ */ __name((err) => {
+    const errorListener = /* @__PURE__ */ __name((err2) => {
       if (typeof emitter.removeListener === "function") {
         emitter.removeListener(name, resolver);
       }
       if (signal != null) {
         eventTargetAgnosticRemoveListener(signal, "abort", abortListener);
       }
-      reject(err);
+      reject(err2);
     }, "errorListener");
     const resolver = /* @__PURE__ */ __name((...args) => {
       if (typeof emitter.removeListener === "function") {
@@ -5268,8 +5259,8 @@ function addCatch(that, promise, type2, args) {
   try {
     const then = promise.then;
     if (typeof then === "function") {
-      then.call(promise, void 0, function(err) {
-        process.nextTick(emitUnhandledRejectionOrErr, that, err, type2, args);
+      then.call(promise, void 0, function(err2) {
+        process.nextTick(emitUnhandledRejectionOrErr, that, err2, type2, args);
       });
     }
   } catch (error_) {
@@ -5277,14 +5268,14 @@ function addCatch(that, promise, type2, args) {
   }
 }
 __name(addCatch, "addCatch");
-function emitUnhandledRejectionOrErr(ee, err, type2, args) {
+function emitUnhandledRejectionOrErr(ee, err2, type2, args) {
   if (typeof ee[kRejection] === "function") {
-    ee[kRejection](err, type2, ...args);
+    ee[kRejection](err2, type2, ...args);
   } else {
     const prev = ee[kCapture];
     try {
       ee[kCapture] = false;
-      ee.emit("error", err);
+      ee.emit("error", err2);
     } finally {
       ee[kCapture] = prev;
     }
@@ -5297,7 +5288,7 @@ function _getMaxListeners(that) {
   return that._maxListeners;
 }
 __name(_getMaxListeners, "_getMaxListeners");
-function enhanceStackTrace(err, own) {
+function enhanceStackTrace(err2, own) {
   let ctorInfo = "";
   try {
     const { name } = this.constructor;
@@ -5309,7 +5300,7 @@ function enhanceStackTrace(err, own) {
 Emitted 'error' event${ctorInfo} at:
 `;
   const ownStack = (own.stack || "").split("\n").slice(1);
-  return err.stack + sep + ownStack.join("\n");
+  return err2.stack + sep + ownStack.join("\n");
 }
 __name(enhanceStackTrace, "enhanceStackTrace");
 function _addListener(target, type2, listener, prepend) {
@@ -5472,7 +5463,7 @@ function spliceOne(list, index) {
 }
 __name(spliceOne, "spliceOne");
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/events/index.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/events/index.mjs
 var usingDomains = _EventEmitter.usingDomains;
 var captureRejectionSymbol = _EventEmitter.captureRejectionSymbol;
 var errorMonitor = _EventEmitter.errorMonitor;
@@ -5481,7 +5472,7 @@ var setMaxListeners2 = _EventEmitter.setMaxListeners;
 var listenerCount2 = _EventEmitter.listenerCount;
 var init = _EventEmitter.init;
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/stream/internal/readable.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/stream/internal/readable.mjs
 var _Readable = class extends _EventEmitter {
   __unenv__ = true;
   readableEncoding = null;
@@ -5597,7 +5588,7 @@ var _Readable = class extends _EventEmitter {
 __name(_Readable, "_Readable");
 var Readable = globalThis.Readable || _Readable;
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/stream/internal/writable.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/stream/internal/writable.mjs
 init_virtual_unenv_global_polyfill_process();
 init_virtual_unenv_global_polyfill_performance();
 init_virtual_unenv_global_polyfill_console();
@@ -5694,7 +5685,7 @@ var _Writable = class extends _EventEmitter {
 __name(_Writable, "_Writable");
 var Writable2 = globalThis.Writable || _Writable;
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/stream/internal/duplex.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/stream/internal/duplex.mjs
 var __Duplex = /* @__PURE__ */ __name(class {
   allowHalfOpen = true;
   _destroy;
@@ -5713,7 +5704,7 @@ __name(getDuplex, "getDuplex");
 var _Duplex = /* @__PURE__ */ getDuplex();
 var Duplex = globalThis.Duplex || _Duplex;
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/net/internal/socket.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/net/internal/socket.mjs
 var Socket = class extends Duplex {
   __unenv__ = true;
   bufferSize = 0;
@@ -5772,15 +5763,15 @@ var Socket = class extends Duplex {
     this.destroy();
   }
   resetAndDestroy() {
-    const err = new Error("ERR_SOCKET_CLOSED");
-    err.code = "ERR_SOCKET_CLOSED";
-    this.destroy(err);
+    const err2 = new Error("ERR_SOCKET_CLOSED");
+    err2.code = "ERR_SOCKET_CLOSED";
+    this.destroy(err2);
     return this;
   }
 };
 __name(Socket, "Socket");
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/net/index.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/net/index.mjs
 var createServer = notImplemented(
   "net.createServer"
 );
@@ -5809,7 +5800,7 @@ var _setSimultaneousAccepts = notImplemented(
   "net._setSimultaneousAccepts"
 );
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/internal/request.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/internal/request.mjs
 init_utils();
 var IncomingMessage = class extends Readable {
   __unenv__ = {};
@@ -5863,14 +5854,14 @@ function _distinct(obj) {
 }
 __name(_distinct, "_distinct");
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/internal/response.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/internal/response.mjs
 init_virtual_unenv_global_polyfill_process();
 init_virtual_unenv_global_polyfill_performance();
 init_virtual_unenv_global_polyfill_console();
 init_virtual_unenv_global_polyfill_set_immediate();
 init_virtual_unenv_global_polyfill_clear_immediate();
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/stream/index.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/stream/index.mjs
 init_virtual_unenv_global_polyfill_process();
 init_virtual_unenv_global_polyfill_performance();
 init_virtual_unenv_global_polyfill_console();
@@ -5897,7 +5888,7 @@ var destroy = notImplemented("stream.destroy");
 var _isUint8Array = notImplemented("stream._isUint8Array");
 var _uint8ArrayToBuffer = notImplemented("stream._uint8ArrayToBuffer");
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/internal/response.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/internal/response.mjs
 var ServerResponse = class extends Writable2 {
   __unenv__ = true;
   statusCode = 200;
@@ -5998,7 +5989,7 @@ var ServerResponse = class extends Writable2 {
 };
 __name(ServerResponse, "ServerResponse");
 
-// D:/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/index.mjs
+// D:/Applications/Scoop/persist/nodejs-lts/bin/node_modules/wrangler/node_modules/unenv/runtime/node/http/index.mjs
 var createServer2 = notImplemented("http.createServer");
 var request = notImplemented("http.request");
 var get = notImplemented("http.get");
@@ -6042,7 +6033,7 @@ var import_dotenv = __toESM(require_main(), 1);
 import_dotenv.default.config();
 var Config = class {
   constructor() {
-    this.PORT = process.env.PORT || "8787";
+    this.PORT = process.env.PORT || 8787;
     this.API_PREFIX = process.env.API_PREFIX || "/";
     this.API_KEY = process.env.API_KEY || "";
     this.MAX_RETRY_COUNT = process.env.MAX_RETRY_COUNT || 3;
@@ -6052,17 +6043,17 @@ var Config = class {
       "Accept-Encoding": "gzip, deflate, br, zstd",
       "Accept-Language": "zh-CN,zh;q=0.9",
       Origin: "https://duckduckgo.com/",
-      Cookie: "l=wt-wt; ah=wt-wt; dcm=6",
+      Cookie: "dcm=3",
       Dnt: "1",
       Priority: "u=1, i",
       Referer: "https://duckduckgo.com/",
-      "Sec-Ch-Ua": '"Microsoft Edge";v="129", "Not(A:Brand";v="8", "Chromium";v="129"',
+      "Sec-Ch-Ua": '"Chromium";v="130", "Microsoft Edge";v="130", "Not?A_Brand";v="99"',
       "Sec-Ch-Ua-Mobile": "?0",
       "Sec-Ch-Ua-Platform": '"Windows"',
       "Sec-Fetch-Dest": "empty",
       "Sec-Fetch-Mode": "cors",
       "Sec-Fetch-Site": "same-origin",
-      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0"
     };
   }
 };
@@ -6117,8 +6108,8 @@ async function handleCompletion(request2) {
     const model = convertModel(inputModel);
     const content = messagesPrepare(messages);
     return createCompletion(model, content, returnStream);
-  } catch (err) {
-    return s(500, err.message);
+  } catch (err2) {
+    return s(500, err2.message);
   }
 }
 __name(handleCompletion, "handleCompletion");
@@ -6144,17 +6135,17 @@ async function createCompletion(model, content, returnStream, retryCount = 0) {
       })
     });
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      throw new Error(`Create Completion error! status: ${response.status}`);
     }
     return handlerStream(model, response.body, returnStream);
-  } catch (err) {
-    console.log(err);
+  } catch (err2) {
+    console.log(err2);
     if (retryCount < config2.MAX_RETRY_COUNT) {
       console.log("Retrying... count", ++retryCount);
       await new Promise((resolve) => setTimeout(resolve, config2.RETRY_DELAY));
       return await createCompletion(model, content, returnStream, retryCount);
     }
-    throw err;
+    throw err2;
   }
 }
 __name(createCompletion, "createCompletion");
@@ -6245,18 +6236,19 @@ function messagesPrepare(messages) {
 }
 __name(messagesPrepare, "messagesPrepare");
 async function requestToken() {
-  const response = await fetch(`https://duckduckgo.com/duckchat/v1/status`, {
-    method: "GET",
-    headers: {
-      ...config2.FAKE_HEADERS,
-      "x-vqd-accept": "1"
-    }
-  });
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
+  try {
+    const response = await fetch(`https://duckduckgo.com/duckchat/v1/status`, {
+      method: "GET",
+      headers: {
+        ...config2.FAKE_HEADERS,
+        "x-vqd-accept": "1"
+      }
+    });
+    const token = response.headers.get("x-vqd-4");
+    return token;
+  } catch (error3) {
+    console.log("Request token error: ", err);
   }
-  const token = response.headers.get("x-vqd-4");
-  return token;
 }
 __name(requestToken, "requestToken");
 function convertModel(inputModel) {

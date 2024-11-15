@@ -17,17 +17,17 @@ class Config {
       'Accept-Encoding': 'gzip, deflate, br, zstd',
       'Accept-Language': 'zh-CN,zh;q=0.9',
       Origin: 'https://duckduckgo.com/',
-      Cookie: 'l=wt-wt; ah=wt-wt; dcm=6',
+      Cookie: 'dcm=3',
       Dnt: '1',
       Priority: 'u=1, i',
       Referer: 'https://duckduckgo.com/',
-      'Sec-Ch-Ua': '"Microsoft Edge";v="129", "Not(A:Brand";v="8", "Chromium";v="129"',
+      'Sec-Ch-Ua': '"Chromium";v="130", "Microsoft Edge";v="130", "Not?A_Brand";v="99"',
       'Sec-Ch-Ua-Mobile': '?0',
       'Sec-Ch-Ua-Platform': '"Windows"',
       'Sec-Fetch-Dest': 'empty',
       'Sec-Fetch-Mode': 'cors',
       'Sec-Fetch-Site': 'same-origin',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0',
     }
   }
 }
@@ -117,7 +117,7 @@ async function createCompletion(model, content, returnStream, retryCount = 0) {
     })
 
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`)
+      throw new Error(`Create Completion error! status: ${response.status}`)
     }
     return handlerStream(model, response.body, returnStream)
   } catch (err) {
@@ -225,20 +225,19 @@ function messagesPrepare(messages) {
 }
 
 async function requestToken() {
-  const response = await fetch(`https://duckduckgo.com/duckchat/v1/status`, {
-    method: 'GET',
-    headers: {
-      ...config.FAKE_HEADERS,
-      'x-vqd-accept': '1',
-    },
-  })
-
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`)
+  try {
+    const response = await fetch(`https://duckduckgo.com/duckchat/v1/status`, {
+      method: 'GET',
+      headers: {
+        ...config.FAKE_HEADERS,
+        'x-vqd-accept': '1',
+      },
+    })
+    const token = response.headers.get('x-vqd-4')
+    return token
+  } catch (error) {
+    console.log("Request token error: ", err)
   }
-
-  const token = response.headers.get('x-vqd-4')
-  return token
 }
 
 function convertModel(inputModel) {
@@ -315,7 +314,7 @@ function newChatCompletionWithModel(text, model) {
 
 // Serverless Service
 
-;(async () => {
+(async () => {
   //For Cloudflare Workers
   if (typeof addEventListener === 'function') return
   // For Nodejs
