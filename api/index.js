@@ -77,6 +77,7 @@ router.get(config.API_PREFIX + '/v1/models', () =>
       { id: 'claude-3-haiku', object: 'model', owned_by: 'ddg' },
       { id: 'llama-3.1-70b', object: 'model', owned_by: 'ddg' },
       { id: 'mixtral-8x7b', object: 'model', owned_by: 'ddg' },
+      { id: 'o3-mini', object: 'model', owned_by: 'ddg' },
     ],
   })
 )
@@ -251,6 +252,9 @@ function convertModel(inputModel) {
       break
     case 'mixtral-8x7b':
       model = 'mistralai/Mixtral-8x7B-Instruct-v0.1'
+      break
+    case 'o3-mini':
+      model = 'o3-mini'
       break
   }
   return model || 'gpt-4o-mini'

@@ -74,6 +74,7 @@ curl --request POST 'https://chatcfapi.r12.top/v1/chat/completions' \
 - claude-3-haiku
 - llama-3.1-70b
 - mixtral-8x7b
+- o3-mini
 
 ## 手动部署
 
