@@ -75,7 +75,7 @@ router.get(config.API_PREFIX + '/v1/models', () =>
     data: [
       { id: 'gpt-4o-mini', object: 'model', owned_by: 'ddg' },
       { id: 'claude-3-haiku', object: 'model', owned_by: 'ddg' },
-      { id: 'llama-3.1-70b', object: 'model', owned_by: 'ddg' },
+      { id: 'llama-3.3-70b', object: 'model', owned_by: 'ddg' },
       { id: 'mixtral-8x7b', object: 'model', owned_by: 'ddg' },
       { id: 'o3-mini', object: 'model', owned_by: 'ddg' },
     ],
@@ -215,9 +215,9 @@ function messagesPrepare(messages) {
     if (['user', 'assistant'].includes(role)) {
       const contentStr = Array.isArray(message.content)
         ? message.content
-            .filter((item) => item.text)
-            .map((item) => item.text)
-            .join('') || ''
+          .filter((item) => item.text)
+          .map((item) => item.text)
+          .join('') || ''
         : message.content
       content += `${role}:${contentStr};\r\n`
     }
@@ -247,8 +247,8 @@ function convertModel(inputModel) {
     case 'claude-3-haiku':
       model = 'claude-3-haiku-20240307'
       break
-    case 'llama-3.1-70b':
-      model = 'meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo'
+    case 'llama-3.3-70b':
+      model = 'meta-llama/Llama-3.3-70B-Instruct-Turbo'
       break
     case 'mixtral-8x7b':
       model = 'mistralai/Mixtral-8x7B-Instruct-v0.1'

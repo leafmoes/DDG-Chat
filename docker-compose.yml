@@ -7,3 +7,13 @@ services:
     restart: unless-stopped
     ports:
       - "8787:8787"
+    #environment:
+    #  - HTTP_PROXY=http://<your_proxy_address>:<proxy_port>  #http代理
+    #  - HTTPS_PROXY=http://<your_proxy_address>:<proxy_port>  #https代理
+    #  - NO_PROXY="localhost,127.0.0.1"  # 用于忽略本地请求
+    #networks:
+    #  - bridge-network
+
+#networks:
+#  bridge-network:
+#    driver: bridge
