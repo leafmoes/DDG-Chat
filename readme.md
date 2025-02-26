@@ -5,7 +5,7 @@
 
 支持 Vercel, Cloudflare Workers, Docker, Render 等
 
-支持 o3 mini, GPT 4o mini, Claude 3 Haiku, Llama 3.3 70B, Mixtral 8x7B 模型
+支持 o3 mini, GPT 4o mini, Claude 3 Haiku, Llama 3.3 70B, Mixtral Small 3 模型
 
 所有模型均由 DuckDuckGo 匿名提供
 
@@ -73,7 +73,7 @@ curl --request POST 'https://chatcfapi.r12.top/v1/chat/completions' \
 - gpt-4o-mini
 - claude-3-haiku
 - llama-3.3-70b
-- mixtral-8x7b
+- mixtral-small-3
 - o3-mini
 
 ## 手动部署
@@ -134,7 +134,7 @@ npm install
 
 3. 打开文件 /api/index.js ，取消最后一行的注释，然后执行 `npm run publish:cf`
 
-### Hugging Face
+### Hugging Face (推荐)
 
 1. 创建一个新空间：[Create a new Space ](https://huggingface.co/new-space)
     ```
