@@ -21,13 +21,13 @@ class Config {
       Dnt: '1',
       Priority: 'u=1, i',
       Referer: 'https://duckduckgo.com/',
-      'Sec-Ch-Ua': '"Chromium";v="130", "Microsoft Edge";v="130", "Not?A_Brand";v="99"',
+      'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"',
       'Sec-Ch-Ua-Mobile': '?0',
       'Sec-Ch-Ua-Platform': '"Windows"',
       'Sec-Fetch-Dest': 'empty',
       'Sec-Fetch-Mode': 'cors',
       'Sec-Fetch-Site': 'same-origin',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0',
     }
   }
 }
@@ -76,7 +76,7 @@ router.get(config.API_PREFIX + '/v1/models', () =>
       { id: 'gpt-4o-mini', object: 'model', owned_by: 'ddg' },
       { id: 'claude-3-haiku', object: 'model', owned_by: 'ddg' },
       { id: 'llama-3.3-70b', object: 'model', owned_by: 'ddg' },
-      { id: 'mixtral-8x7b', object: 'model', owned_by: 'ddg' },
+      { id: 'mixtral-small-3', object: 'model', owned_by: 'ddg' },
       { id: 'o3-mini', object: 'model', owned_by: 'ddg' },
     ],
   })
@@ -250,8 +250,8 @@ function convertModel(inputModel) {
     case 'llama-3.3-70b':
       model = 'meta-llama/Llama-3.3-70B-Instruct-Turbo'
       break
-    case 'mixtral-8x7b':
-      model = 'mistralai/Mixtral-8x7B-Instruct-v0.1'
+    case 'mixtral-small-3':
+      model = 'mistralai/Mistral-Small-24B-Instruct-2501'
       break
     case 'o3-mini':
       model = 'o3-mini'
