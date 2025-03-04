@@ -1,3 +1,7 @@
+> [!WARNING]
+> 由于 DuckDuckGo 的单IP并发限制，导致429错误，以及无服务器环境 Vercel, Cloudflare Workers 基本被 DuckDuckGo 封禁等[原因](https://github.com/leafmoes/DDG-Chat/issues/19#issuecomment-2698038822)
+> 本项目已归档，请尝试其他项目，非常感谢你对本项目的支持，但我们不得不再见！
+
 <div align="center">
 <img src="https://socialify.git.ci/leafmoes/DDG-Chat/image?font=Inter&forks=1&issues=1&logo=https://duckduckgo.com/assets/logo_header.v109.svg&name=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto" alt="DDG-Chat"/>
 
